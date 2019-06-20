@@ -19,34 +19,9 @@ class App extends Component {
 
     state = { results: false }
 
-    // register user (registrar usuario)
-    handleRegister = (name, username, email, emailConfirm, password, passwordConfirm) => {
-        try {
-            logic.registerUser(name, username, email, emailConfirm, password, passwordConfirm)
-                .then(() => {
-                    toast('you have registered correctly!')
-                    this.props.history.push('/login')
-                }) 
-                .catch(error => toast(error.message))
-        } catch (error) {
-            toast(error.message)
-        }
-    }
+   
 
-    // login - session start (logearse - iniciar sesión)
-    handleLogin = (email, password) => {
-        try {
-            logic.loginUser(email, password)
-                .then(() => {
-                    toast('you have logged in correctly!')
-                    this.props.history.push('/')
-                })
-                .catch(error => toast(error.message))
-
-        } catch (error) {
-            toast(error.message)
-        }
-    }
+   
 
     // logout session (salir de la sesión)
     handleLogout = () => {
@@ -211,8 +186,6 @@ class App extends Component {
                     <Route exact path="/item/:itemId" 
                         render={() => <Detail /> } 
                     />
-
-
                     
                 </Switch>
             </>
