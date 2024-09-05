@@ -1,8 +1,6 @@
 
 # laClave
 
-![](https://media.giphy.com/media/RuVJnBoH5v1mM/giphy.gif)
-
 <div align="center">
     <img src="https://media.giphy.com/media/RuVJnBoH5v1mM/giphy.gif">
 <div>
